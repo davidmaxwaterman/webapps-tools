@@ -1,0 +1,7 @@
+#! /bin/bash
+
+for app in webapps-*; do
+  name=$(cat $app/package.json | awk -F: '/"name"/ { print $2 }' | tr -d '[ ",]');
+  version=$(echo 2013-10-27/wgt/${name}*.wgt | awk -F_ '{ print $2 }');
+  github-prepare $app v$version;
+done

@@ -1,0 +1,14 @@
+#! /bin/bash
+
+token="TOKEN";
+
+repo=$1;
+
+echo Repo: $repo;
+
+#owner="davidmaxwaterman";
+owner="01org";
+
+# get release
+curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repo/releases" | github-parse-list
+

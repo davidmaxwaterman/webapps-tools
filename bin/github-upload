@@ -1,0 +1,29 @@
+#! /bin/bash
+
+token="TOKEN";
+filename=$2;
+name=$(basename $filename);
+
+echo Name: $name;
+
+repo=$1;
+
+echo Repo: $repo;
+
+#owner="davidmaxwaterman";
+owner="01org";
+
+# get release from filename
+release=v$(echo $filename | awk -F_ '{ print $2 }');
+
+echo Release: $release;
+
+# get release
+repoId=$(curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repo/releases" | github-parse-release -t $release)
+
+echo Repo ID: $repoId;
+
+if [ -n "$repoId" ]; then
+  curl --data-binary "@$filename" -i -H "Authorization: token $token" -H 'Content-Type: application/zip' "https://uploads.github.com/repos/$owner/$repo/releases/$repoId/assets?name=$name";
+  echo;
+fi

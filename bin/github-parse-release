@@ -1,0 +1,27 @@
+#! /usr/bin/env node
+var inputStream = process.stdin
+  , data = '';
+var argv = require('optimist')
+  .usage('Usage: $0 -t [tagname]')
+  .argv;
+
+process.stdin.resume();
+
+// Read the entire input stream into the data variable.
+inputStream.on('data', function(chunk) {
+  data += chunk;
+});
+
+// At end of stream, load the JSON object and process it.
+inputStream.on('end', function() {
+  var json = JSON.parse(data);
+  var id = 0;
+
+  json.forEach(function(release) {
+    if (release.tag_name==argv.t) {
+      id = release.id;
+    }
+  });
+
+  console.log(id);
+});

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+for app in webapps-*; do
+  name=$(cat $app/package.json | awk -F: '/"name"/ { print $2 }' | tr -d '[ ",]');
+  ~/bin/github-upload $(echo $app | sed 's?/$??') 2013-10-27/wgt/${name}*.wgt;
+done
