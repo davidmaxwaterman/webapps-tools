@@ -14,7 +14,8 @@ echo Repo: $repo;
 owner="01org";
 
 # get release from filename
-release=v$(echo $filename | awk -F_ '{ print $2 }');
+# TODO generalise the '.xpk' (could be xpk, apk, etc) and the $2 below (with filenames beginning with _, it isn't the second arg)
+release=v$(basename $filename .xpk | awk -F_ '{ print $2 }');
 
 echo Release: $release;
 
