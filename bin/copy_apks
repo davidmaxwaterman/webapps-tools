@@ -1,0 +1,16 @@
+#! /bin/bash
+
+arch=arm;
+destdir=2014-03-11;
+
+cd ~/z/webapps;
+for app in webapps-*/; do
+  echo ===================== $app;
+  cd $app/build;
+  version=$(awk -F: '/version/ { print $2 }' ../package.json | tr -d ' ",');
+  apk=$(ls -1 *.apk | grep -v signed);
+  template=$(echo $XWALK_APP_TEMPLATE | awk -F- '{ print $2 }');
+  dest=$(echo $apk | sed s/\\.$arch/_$version_$template\.$arch/);
+  cp $apk ../../$destdir/apk-$arch/$dest;
+  cd -;
+done

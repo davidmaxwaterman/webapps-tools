@@ -1,5 +1,7 @@
 #! /bin/bash
 
+ext=$3;
+
 token="TOKEN";
 filename=$2;
 name=$(basename $filename);
@@ -15,7 +17,8 @@ owner="01org";
 
 # get release from filename
 # TODO generalise the '.xpk' (could be xpk, apk, etc) and the $2 below (with filenames beginning with _, it isn't the second arg)
-release=v$(basename $filename .xpk | awk -F_ '{ print $2 }');
+#release=v$(basename $filename .wgt | awk -F_ '{ print $2 }');
+release=v$(basename $filename .$ext | awk -F_ '{ print $2 }');
 
 echo Release: $release;
 

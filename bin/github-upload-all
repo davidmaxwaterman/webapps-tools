@@ -1,6 +1,9 @@
 #! /bin/bash
 
+dir=apk-x86
+ext=apk
+
 for app in webapps-*; do
   name=$(cat $app/package.json | awk -F: '/"name"/ { print $2 }' | tr -d '[ ",]');
-  ~/bin/github-upload $(echo $app | sed 's?/$??') 2013-10-27/wgt/${name}*.wgt;
+  ~/bin/github-upload $(echo $app | sed 's?/$??') 2014-03-11/$dir/${name}*.$ext $ext;
 done
