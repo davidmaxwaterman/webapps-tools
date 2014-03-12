@@ -10,7 +10,7 @@ for app in webapps-*/; do
   version=$(awk -F: '/version/ { print $2 }' ../package.json | tr -d ' ",');
   apk=$(ls -1 *.apk | grep -v signed);
   template=$(echo $XWALK_APP_TEMPLATE | awk -F- '{ print $2 }');
-  dest=$(echo $apk | sed s/\\.$arch/_$version_$template\.$arch/);
+  dest=$(echo $apk | sed s/\\.${arch}/_${version}_${template}\.${arch}/);
   cp $apk ../../$destdir/apk-$arch/$dest;
   cd -;
 done
