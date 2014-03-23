@@ -45,7 +45,7 @@ do
   echo building crosswalk:shared;
   XWALK_APP_TEMPLATE=$(echo ../crosswalk*x86/xwalk_app_template) grunt crosswalk:shared;
   echo copying;
-  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-shared/${name}_${version}_${xwalkversion}.apk;
+  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-shared/${name}_${version}_${xwalkversion}.shared.apk;
 
   #apk-x86
   echo building xpk;
