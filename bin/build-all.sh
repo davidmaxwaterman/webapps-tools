@@ -24,7 +24,7 @@ do
 
   name=$(awk -F: '/"name"/ { print $2 }' package.json | tr -d ', "');
   version=$(awk -F: '/"version"/ { print $2 }' package.json | tr -d ', "');
-  nameandversion=${name}-${version};
+  nameandversion=${name}_${version};
 
   echo cleaning up;
   git clean -dfx;
@@ -37,7 +37,7 @@ do
   echo building crosswalk:arm;
   XWALK_APP_TEMPLATE=$(echo ../crosswalk*arm/xwalk_app_template) grunt crosswalk:arm;
   echo copying;
-  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-arm/${name}-${version}-${xwalkversion}.arm.apk;
+  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-arm/${name}_${version}_${xwalkversion}.arm.apk;
 
   #apk-shared
   echo building xpk;
@@ -45,7 +45,7 @@ do
   echo building crosswalk:shared;
   XWALK_APP_TEMPLATE=$(echo ../crosswalk*x86/xwalk_app_template) grunt crosswalk:shared;
   echo copying;
-  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-shared/${name}-${version}-${xwalkversion}.apk;
+  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-shared/${name}_${version}_${xwalkversion}.apk;
 
   #apk-x86
   echo building xpk;
@@ -53,7 +53,7 @@ do
   echo building crosswalk:shared;
   XWALK_APP_TEMPLATE=$(echo ../crosswalk*x86/xwalk_app_template) grunt crosswalk:x86;
   echo copying;
-  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-x86/${name}-${version}-${xwalkversion}.x86.apk;
+  cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-x86/${name}_${version}_${xwalkversion}.x86.apk;
 
   #crx
   # .zip
@@ -66,7 +66,7 @@ do
   unzip build/*.zip -d ${nameandversion};
   cp platforms/chrome-crx/*.pem .;
   google-chrome --pack-extension=${nameandversion} --pack-extension-key=${name}.pem;
-  cp ${nameandversion}.crx ../$date/crx/;
+  cp ${nameandversion}_.crx ../$date/crx/;
 
   #sdk
   echo building sdk;
@@ -84,7 +84,7 @@ do
   echo building xpk;
   grunt xpk;
   echo packaging;
-  make_xpk.py build/xpk -o ../$date/xpk/${nameandversion}.xpk platforms/tizen-xpk/signature;
+  make_xpk.py build/xpk -o ../$date/xpk/${nameandversion}_.xpk platforms/tizen-xpk/signature;
 
   cd -;
 done;

@@ -14,7 +14,7 @@ for dir in ${date}/*; do
   for ext in $(ls -1 ${dir} | awk -F. '{ print $NF }' | sort -u); do
     for app in webapps-*; do
       name=$(cat $app/package.json | awk -F: '/"name"/ { print $2 }' | tr -d '[ ",]');
-      echo ~/bin/github-upload $(echo $app | sed 's?/$??') 2014-03-11/$dir/${name}*.$ext $ext;
+      github-upload $(echo $app | sed 's?/$??') $dir/${name}*.$ext $ext;
     done
   done
 done

@@ -8,8 +8,8 @@ if [ "$1" ]; then
   date=$1;
 else
   date=$(ls -1trd 20* | tail -n1);
-  echo Usage: $0 <date-directory>
-  echo        assuming ${date}
+  echo Usage: $0 '<date-directory>';
+  echo        assuming ${date};
 fi
 
 for app in webapps-*; do

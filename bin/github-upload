@@ -3,7 +3,11 @@
 ext=$3;
 
 token="$GITHUB_TOKEN";
+
 filename=$2;
+
+echo Filename: $filename;
+
 name=$(basename $filename);
 
 echo Name: $name;
