@@ -13,8 +13,8 @@ mkdir $date/sdk;
 mkdir $date/wgt;
 mkdir $date/xpk;
 
-#xwalk_android_dl -a arm;
-#xwalk_android_dl -a x86;
+xwalk_android_dl -a arm;
+xwalk_android_dl -a x86;
 xwalkversion=$(awk -F- '{print $2}'<<<$(ls -1d crosswalk*/ | tail -n1));
 
 for app in webapps-*/;

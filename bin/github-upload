@@ -2,7 +2,7 @@
 
 ext=$3;
 
-token="TOKEN";
+token="$GITHUB_TOKEN";
 filename=$2;
 name=$(basename $filename);
 

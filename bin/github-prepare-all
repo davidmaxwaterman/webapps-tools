@@ -1,7 +1,19 @@
 #! /bin/bash
+# prepares the release for all the repositories
+# specify the release directory as the first argument - it is
+# assumed this is always a date, eg 2014-03-20/ I'm not sure
+# if using some other name will cause a problem or not
+
+if [ "$1" ]; then
+  date=$1;
+else
+  date=$(ls -1trd 20* | tail -n1);
+  echo Usage: $0 <date-directory>
+  echo        assuming ${date}
+fi
 
 for app in webapps-*; do
   name=$(cat $app/package.json | awk -F: '/"name"/ { print $2 }' | tr -d '[ ",]');
-  version=$(echo 2013-10-27/wgt/${name}*.wgt | awk -F_ '{ print $2 }');
+  version=$(echo ${date}/wgt/${name}*.wgt | awk -F_ '{ print $2 }');
   github-prepare $app v$version;
 done
