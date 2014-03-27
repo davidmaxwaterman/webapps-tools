@@ -1,0 +1,35 @@
+#! /bin/bash -fx
+# you need to change the grep below to filter which file you want
+# the problem is that there are multiple '.zip' files for each release
+# so it can't be generalised.
+
+webapps="webapps-annex
+webapps-bubblewrap
+webapps-countingbeads
+webapps-flashcards
+webapps-go
+webapps-hangonman
+webapps-make-a-monster
+webapps-mancala
+webapps-memory-game-older-kids
+webapps-memory-match
+webapps-numeroo
+webapps-rabbit
+webapps-scientific-calculator
+webapps-shopping-list
+webapps-slider-puzzle
+webapps-sweetspot
+webapps-tenframe
+webapps-todo-list
+webapps-wordswarm
+";
+
+for app in $webapps;
+do
+  echo $app;
+  latest=$(github-list $app | grep '\.crx' | sort -V | tail -n1);
+  #file=$(echo $latest | cut -d: -f2);
+  #tag=$(echo $latest | cut -d: -f1);
+  #url='https://github.com/01org/'${app}'/releases/download/'${tag}'/'${file};
+  #wget -O tmp/$file $url;
+done
