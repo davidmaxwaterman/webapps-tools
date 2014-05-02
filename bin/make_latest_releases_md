@@ -12,6 +12,6 @@ do
       awk '{ print $2 }');
   cd ..;
   github-list $app |
-    awk -F: '/'$latest'/ { print "https://github.com/01org/'$app'/releases/download/'$latest'/"$2 }';
+    awk -F: '/'$latest'/ { print "https://github.com/01org/'$app'/releases/download/v'$latest'/"$2 }';
 done;
-cd -
+cd - >&/dev/null
