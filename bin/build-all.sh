@@ -66,7 +66,7 @@ do
   unzip build/*.zip -d ${nameandversion};
   cp platforms/chrome-crx/*.pem .;
   google-chrome --pack-extension=${nameandversion} --pack-extension-key=${name}.pem;
-  cp ${nameandversion}_.crx ../$date/crx/;
+  cp ${nameandversion}.crx ../$date/crx/;
 
   #sdk
   echo building sdk;
