@@ -1,0 +1,22 @@
+Links to webapps repositories
+=============================
+https://github.com/01org/webapps-annex/
+https://github.com/01org/webapps-bubblewrap/
+https://github.com/01org/webapps-countingbeads/
+https://github.com/01org/webapps-flashcards/
+https://github.com/01org/webapps-go/
+https://github.com/01org/webapps-hangonman/
+https://github.com/01org/webapps-make-a-monster/
+https://github.com/01org/webapps-mancala/
+https://github.com/01org/webapps-memory-game-older-kids/
+https://github.com/01org/webapps-memory-match/
+https://github.com/01org/webapps-numeroo/
+https://github.com/01org/webapps-rabbit/
+https://github.com/01org/webapps-scientific-calculator/
+https://github.com/01org/webapps-shopping-list/
+https://github.com/01org/webapps-slider-puzzle/
+https://github.com/01org/webapps-sweetspot/
+https://github.com/01org/webapps-tenframe/
+https://github.com/01org/webapps-todo-list/
+https://github.com/01org/webapps-wordswarm/
+https://github.com/01org//home/davidmaxwaterman/z/webapps-tools

@@ -1,0 +1,17 @@
+#! /bin/bash
+
+echo -e 'Links to latest releases\n========================\n';
+cd ~/z/webapps/;
+for app in webapps-*;
+do
+  cd $app;
+  latest=$(
+      git log |
+      grep release |
+      head -n1 |
+      awk '{ print $2 }');
+  cd ..;
+  github-list $app |
+    awk -F: '/'$latest'/ { print "https://github.com/01org/'$app'/releases/download/'$latest'/"$2 }';
+done;
+cd -
