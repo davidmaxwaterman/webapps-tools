@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo -e 'Links to latest releases\n========================\n';
+echo '#Links to latest releases';
 cd ~/z/webapps/;
 for app in webapps-*;
 do
@@ -11,7 +11,85 @@ do
       head -n1 |
       awk '{ print $2 }');
   cd ..;
-  github-list $app |
-    awk -F: '/'$latest'/ { print "https://github.com/01org/'$app'/releases/download/'$latest'/"$2 }';
+  files=( $(github-list $app | awk -F: '/'$latest'/ { print $2 }') );
+
+  dlpath="https://github.com/01org/"$app"/releases/download/"$latest"/";
+
+  crxzip+=(${dlpath}${files[0]});
+  crxcrx+=(${dlpath}${files[1]});
+  xpkxpk+=(${dlpath}${files[2]});
+  sdkzip+=(${dlpath}${files[3]});
+  wgtwgt+=(${dlpath}${files[4]});
+  armapk+=(${dlpath}${files[5]});
+  shrapk+=(${dlpath}${files[6]});
+  x86apk+=(${dlpath}${files[7]});
 done;
-cd -
+cd - >&/dev/null
+
+echo '##Chrome crx';
+
+echo '###Unpacked chrome extension';
+for url in ${crxzip[*]};
+do
+  echo 1. $url;
+done;
+
+echo;
+
+echo '###Packed chrome extension';
+for url in ${crxcrx[*]};
+do
+  echo 1. $url;
+done;
+
+echo;
+
+echo '##Crosswalk';
+echo '###XPK for Tizen';
+for url in ${xpkxpk[*]};
+do
+  echo 1. $url;
+done;
+
+echo;
+
+echo '###APK shared';
+for url in ${shrapk[*]};
+do
+  echo 1. $url
+done;
+
+echo;
+
+echo '###APK x86';
+for url in ${x86apk[*]};
+do
+  echo 1. $url
+done;
+
+echo;
+
+echo '###APK arm';
+for url in ${armapk[*]};
+do
+  echo 1. $url
+done;
+
+echo;
+
+echo '##Tizen WRT';
+echo '###SDK unoptimised';
+for url in ${sdkzip[*]};
+do
+  echo 1. $url;
+done;
+
+echo;
+
+echo '###WGT';
+for url in ${wgtwgt[*]};
+do
+  echo 1. $url;
+done;
+
+echo;
