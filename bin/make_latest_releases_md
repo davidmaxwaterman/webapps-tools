@@ -13,7 +13,7 @@ do
   cd ..;
   files=( $(github-list $app | awk -F: '/'$latest'/ { print $2 }') );
 
-  dlpath="https://github.com/01org/"$app"/releases/download/"$latest"/";
+  dlpath="https://github.com/01org/"$app"/releases/download/v"$latest"/";
 
   crxzip+=(${dlpath}${files[0]});
   crxcrx+=(${dlpath}${files[1]});
