@@ -13,7 +13,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch-crx_1.1.7_2014-04-30_213747.zip
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo-crx_0.0.8_2014-04-30_213923.zip
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit-crx_0.0.8_2014-04-30_214036.zip
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator-crx_0.0.8_2014-04-30_214159.zip
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator-crx_0.0.9_2014-07-24_213345.zip
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList-crx_0.0.8_2014-04-30_214333.zip
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle-crx_2.0.7_2014-04-30_214518.zip
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot-crx_1.0.8_2014-04-30_214630.zip
@@ -34,7 +34,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7.crx
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8.crx
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8.crx
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8.crx
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9.crx
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8.crx
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7.crx
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8.crx
@@ -56,7 +56,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_.xpk
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_.xpk
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_.xpk
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_.xpk
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_.xpk
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_.xpk
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_.xpk
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_.xpk
@@ -77,7 +77,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_4.32.76.5.shared.apk
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_4.32.76.5.shared.apk
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_4.32.76.5.shared.apk
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_4.32.76.5.shared.apk
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_7.36.154.11.shared.apk
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_4.32.76.5.shared.apk
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_4.32.76.5.shared.apk
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_4.32.76.5.shared.apk
@@ -98,7 +98,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_4.32.76.5.x86.apk
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_4.32.76.5.x86.apk
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_4.32.76.5.x86.apk
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_4.32.76.5.x86.apk
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_7.36.154.11.x86.apk
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_4.32.76.5.x86.apk
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_4.32.76.5.x86.apk
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_4.32.76.5.x86.apk
@@ -119,7 +119,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_4.32.76.5.arm.apk
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_4.32.76.5.arm.apk
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_4.32.76.5.arm.apk
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_4.32.76.5.arm.apk
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_7.36.154.11.arm.apk
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_4.32.76.5.arm.apk
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_4.32.76.5.arm.apk
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_4.32.76.5.arm.apk
@@ -141,7 +141,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_2014-04-30_213758.zip
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_2014-04-30_213926.zip
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_2014-04-30_214039.zip
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_2014-04-30_214204.zip
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_2014-07-24_213352.zip
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_2014-04-30_214340.zip
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_2014-04-30_214522.zip
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_2014-04-30_214632.zip
@@ -162,7 +162,7 @@
 1. https://github.com/01org/webapps-memory-match/releases/download/v1.1.7/MemoryMatch_1.1.7_2014-04-30_213808.wgt
 1. https://github.com/01org/webapps-numeroo/releases/download/v0.0.8/Numeroo_0.0.8_2014-04-30_213929.wgt
 1. https://github.com/01org/webapps-rabbit/releases/download/v0.0.8/Rabbit_0.0.8_2014-04-30_214043.wgt
-1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.8/ScientificCalculator_0.0.8_2014-04-30_214208.wgt
+1. https://github.com/01org/webapps-scientific-calculator/releases/download/v0.0.9/ScientificCalculator_0.0.9_2014-07-24_213357.wgt
 1. https://github.com/01org/webapps-shopping-list/releases/download/v0.0.8/ShoppingList_0.0.8_2014-04-30_214346.wgt
 1. https://github.com/01org/webapps-slider-puzzle/releases/download/v2.0.7/SliderPuzzle_2.0.7_2014-04-30_214528.wgt
 1. https://github.com/01org/webapps-sweetspot/releases/download/v1.0.8/SweetSpot_1.0.8_2014-04-30_214634.wgt
