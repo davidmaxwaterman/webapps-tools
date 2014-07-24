@@ -15,7 +15,7 @@ mkdir $date/xpk;
 
 xwalk_android_dl -a arm;
 xwalk_android_dl -a x86;
-xwalkversion=$(awk -F- '{print $2}'<<<$(ls -1d crosswalk*/ | tail -n1));
+xwalkversion=$(awk -F- '{print $2}'<<<$(ls -1d crosswalk*/ | tail -n1) | sed 's?/$??');
 
 for app in webapps-*/;
 do
@@ -28,14 +28,14 @@ do
 
   echo cleaning up;
   git clean -dfx;
-  npm install;
-  bower install;
+  npm install >& /dev/null;
+  bower install >& /dev/null;
 
   #apk-arm
   echo building xpk;
   grunt xpk;
   echo building crosswalk:arm;
-  XWALK_APP_TEMPLATE=$(echo ../crosswalk*arm/xwalk_app_template) grunt crosswalk:arm;
+  XWALK_APP_TEMPLATE=$(echo ../crosswalk*/ | sed 's?/$??') grunt crosswalk:arm;
   echo copying;
   cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-arm/${name}_${version}_${xwalkversion}.arm.apk;
 
@@ -43,7 +43,7 @@ do
   echo building xpk;
   grunt xpk;
   echo building crosswalk:shared;
-  XWALK_APP_TEMPLATE=$(echo ../crosswalk*x86/xwalk_app_template) grunt crosswalk:shared;
+  XWALK_APP_TEMPLATE=$(echo ../crosswalk*/ | sed 's?/$??') grunt crosswalk:shared;
   echo copying;
   cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-shared/${name}_${version}_${xwalkversion}.shared.apk;
 
@@ -51,7 +51,7 @@ do
   echo building xpk;
   grunt xpk;
   echo building crosswalk:shared;
-  XWALK_APP_TEMPLATE=$(echo ../crosswalk*x86/xwalk_app_template) grunt crosswalk:x86;
+  XWALK_APP_TEMPLATE=$(echo ../crosswalk*/ | sed 's?/$??') grunt crosswalk:x86
   echo copying;
   cp $(ls -1 build/*.apk | grep -v signed) ../$date/apk-x86/${name}_${version}_${xwalkversion}.x86.apk;
 
